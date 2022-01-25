@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>测试页</title>
-    <url>/2021/12/23/%E6%B5%8B%E8%AF%95%E9%A1%B5/</url>
-    <content><![CDATA[<hr>
-<p>摘要</p>
-<span id="more"></span>
-<p>来个动态链表的个人理解好了。\n</p>
-<p>#define _CRT_SECURE_NO_WARNINGS 1<br>#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br>#include&lt;string.h&gt;<br>struct student<br>{<br>    int num;<br>    int grade;<br>    struct student* next;<br>};<br>struct student* creat()<br>{<br>    int n;<br>    struct student* head;//首先，做一个头文件。<br>    struct student* p1, * p2;//然后，做两个连接工具<br>    n = 0;<br>    p1 = p2 = (struct student*)malloc(sizeof(struct student));//结构体自身不占空间，所以需要开空间，p1p2同时指向head结构体<br>    printf(“以学生&quot;学号，成绩&quot;格式输入（0为结束）：\n”);<br>    scanf(“ % ld, % f”, &amp;p1-&gt;num, &amp;p1-&gt;grade);//输入，储存<br>    head = NULL;//头文件初始化<br>    while (p1-&gt;num != 0)//开始创建结构体（head结构体已经存在了，所以从p1开始，是第二个结构体）<br>    {<br>        n = n + 1;<br>        if (n == 1)<br>            head = p1;//第二个创建的结构体与头文件结构体链接<br>        else<br>            p2-&gt;next = p1;//第三个及以上，p1的首地址赋予给了p2所在的结构体中的next，所以该结构体读取next时等同于读取此时p1的结构体地址<br>        p2 = p1;//此时p2位于p1相同的结构体（其实就是p2往后指了一个结构体）<br>        p1 = (struct student*)malloc(sizeof(struct student));//然后p1再创建个新的结构体，并且指向它，这样就又可以执行p2-&gt;next = p1<br>        scanf(“%d,%d”,&amp;p1-&gt;num, &amp;p1-&gt;grade);<br>    }<br>    p2 -&gt; next = NULL;//最后一个结构体指向NULL代表结束<br>    return head;//返回head结构体首地址，这样输出就可以从head开始一直往后延续。<br>}<br>void putout(struct student* head)//输出<br>{<br>    struct student* p,<em>p1;//每个自定义函数都是独立的，这和创建里的p1不同噢。<br>    p1 = (head);<br>    p = p1-&gt;next;//由于头文件只是充当开始的结构体，内容都是随机数，所以输出时把它跳过，从第二个有数值的结构体开始输出<br>    int n = 0;//这个主要是统计学生个数的，可有可无<br>    printf(“\n”);<br>    if (head != NULL)<br>    {<br>        do {<br>            printf(“编号：%d,成绩：%d\n”, p-&gt;num, p-&gt;grade);<br>            p = p-&gt;next;//指针p不断后移，输出，后移，输出，直到结构体全部输出完<br>            n++;<br>        } while (p != NULL);<br>    }<br>    else<br>        return(head);<br>    printf(“\n现在有%d个学生信息”, n);<br>}<br>int main()<br>{<br>    struct student</em> p;//声明一个结构体指针来存放创建函数里出来的head结构体首地址<br>    p =  creat();<br>    putout(p);//然后放进输出函数让它打印出来<br>    free(p);//释放，省点空间，可有可无。<br>    system(“pause”);//暂停，防止系统崩溃，可有可无。<br>}</p>
-]]></content>
-      <tags>
-        <tag>标签</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2021/12/21/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -57,6 +44,19 @@
 <p>   })(document, ‘script’);<br></script><br><noscript>为正常使用来必力评论功能请激活JavaScript</noscript></p>
 </div>
 <!-- City版安装代码已完成 -->]]></content>
+      <tags>
+        <tag>标签</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试页</title>
+    <url>/2021/12/23/%E6%B5%8B%E8%AF%95%E9%A1%B5/</url>
+    <content><![CDATA[<hr>
+<p>摘要</p>
+<span id="more"></span>
+<p>来个动态链表的个人理解好了。\n</p>
+<p>#define _CRT_SECURE_NO_WARNINGS 1<br>#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br>#include&lt;string.h&gt;<br>struct student<br>{<br>    int num;<br>    int grade;<br>    struct student* next;<br>};<br>struct student* creat()<br>{<br>    int n;<br>    struct student* head;//首先，做一个头文件。<br>    struct student* p1, * p2;//然后，做两个连接工具<br>    n = 0;<br>    p1 = p2 = (struct student*)malloc(sizeof(struct student));//结构体自身不占空间，所以需要开空间，p1p2同时指向head结构体<br>    printf(“以学生&quot;学号，成绩&quot;格式输入（0为结束）：\n”);<br>    scanf(“ % ld, % f”, &amp;p1-&gt;num, &amp;p1-&gt;grade);//输入，储存<br>    head = NULL;//头文件初始化<br>    while (p1-&gt;num != 0)//开始创建结构体（head结构体已经存在了，所以从p1开始，是第二个结构体）<br>    {<br>        n = n + 1;<br>        if (n == 1)<br>            head = p1;//第二个创建的结构体与头文件结构体链接<br>        else<br>            p2-&gt;next = p1;//第三个及以上，p1的首地址赋予给了p2所在的结构体中的next，所以该结构体读取next时等同于读取此时p1的结构体地址<br>        p2 = p1;//此时p2位于p1相同的结构体（其实就是p2往后指了一个结构体）<br>        p1 = (struct student*)malloc(sizeof(struct student));//然后p1再创建个新的结构体，并且指向它，这样就又可以执行p2-&gt;next = p1<br>        scanf(“%d,%d”,&amp;p1-&gt;num, &amp;p1-&gt;grade);<br>    }<br>    p2 -&gt; next = NULL;//最后一个结构体指向NULL代表结束<br>    return head;//返回head结构体首地址，这样输出就可以从head开始一直往后延续。<br>}<br>void putout(struct student* head)//输出<br>{<br>    struct student* p,<em>p1;//每个自定义函数都是独立的，这和创建里的p1不同噢。<br>    p1 = (head);<br>    p = p1-&gt;next;//由于头文件只是充当开始的结构体，内容都是随机数，所以输出时把它跳过，从第二个有数值的结构体开始输出<br>    int n = 0;//这个主要是统计学生个数的，可有可无<br>    printf(“\n”);<br>    if (head != NULL)<br>    {<br>        do {<br>            printf(“编号：%d,成绩：%d\n”, p-&gt;num, p-&gt;grade);<br>            p = p-&gt;next;//指针p不断后移，输出，后移，输出，直到结构体全部输出完<br>            n++;<br>        } while (p != NULL);<br>    }<br>    else<br>        return(head);<br>    printf(“\n现在有%d个学生信息”, n);<br>}<br>int main()<br>{<br>    struct student</em> p;//声明一个结构体指针来存放创建函数里出来的head结构体首地址<br>    p =  creat();<br>    putout(p);//然后放进输出函数让它打印出来<br>    free(p);//释放，省点空间，可有可无。<br>    system(“pause”);//暂停，防止系统崩溃，可有可无。<br>}</p>
+]]></content>
       <tags>
         <tag>标签</tag>
       </tags>
