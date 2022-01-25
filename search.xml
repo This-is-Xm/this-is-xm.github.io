@@ -16,7 +16,18 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<!-- ������City�氲װ���� -->
+]]></content>
+  </entry>
+  <entry>
+    <title>新年快乐</title>
+    <url>/2022/01/20/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</url>
+    <content><![CDATA[<hr>
+<p>摘要</p>
+<span id="more"></span>
+<p>来一个长——————————长————————————的分割线</p>
+<p>徐墨：哎嘿嘿，代码来咯， 哎，这这，这代码都齐了，怎么还不用啊?<br>A：老徐，大伙都不敢用，有人说，说是操作太复杂了<br>徐墨：哎呦呦，你这人就爱开玩笑，快趁热用吧，我不打扰，我走了<br>B:你不能走<br>徐墨：0.0<br>徐墨：tnnd，为什么不用！不用是吧，好———————————那我打个包给你们吧QAQ</p>
+<p>以下是打包文件链接(环境我内置好了，点击exe文件可以直接用，无需下载python)：<br>链接: <a href="https://pan.baidu.com/s/1TYxhUgQP-C9tnAHzMwm9tg?pwd=hucu">https://pan.baidu.com/s/1TYxhUgQP-C9tnAHzMwm9tg?pwd=hucu</a> 提取码: hucu</p>
+<!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC81NTI3OS8zMTc0Ng==">
 <script type="text/javascript">
    (function(d, s) {
@@ -30,20 +41,9 @@
 
    e.parentNode.insertBefore(j, e);
 </code></pre>
-<p>   })(document, ‘script’);<br></script><br><noscript>Ϊ����ʹ�����������۹����뼤��JavaScript</noscript></p>
+<p>   })(document, ‘script’);<br></script><br><noscript>为正常使用来必力评论功能请激活JavaScript</noscript></p>
 </div>
-<!-- City�氲װ��������� -->
-]]></content>
-  </entry>
-  <entry>
-    <title>新年快乐</title>
-    <url>/2022/01/20/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</url>
-    <content><![CDATA[<hr>
-<p>摘要</p>
-<span id="more"></span>
-<p>来一个长——————————长————————————的分割线</p>
-<p>徐墨：哎嘿嘿，代码来咯， 哎，这这，这代码都齐了，怎么还不用啊?<br>A：老徐，大伙都不敢用，有人说，说是操作太复杂了<br>徐墨：哎呦呦，你这人就爱开玩笑，快趁热用吧，我不打扰，我走了<br>B:你不能走<br>徐墨：0.0<br>徐墨：tnnd，为什么不用！不用是吧，好———————————那我打个包给你们吧QAQ</p>
-<p>以下是打包文件链接(环境我内置好了，点击exe文件可以直接用，无需下载python)：<br>链接: <a href="https://pan.baidu.com/s/1TYxhUgQP-C9tnAHzMwm9tg?pwd=hucu">https://pan.baidu.com/s/1TYxhUgQP-C9tnAHzMwm9tg?pwd=hucu</a> 提取码: hucu</p>
+<!-- City版安装代码已完成 -->
 ]]></content>
       <tags>
         <tag>标签</tag>
