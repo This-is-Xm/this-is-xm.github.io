@@ -33,7 +33,7 @@
 ]]></content>
   </entry>
   <entry>
-    <title>测试页</title>
+    <title>测试页(含动态链表个人理解)</title>
     <url>/2021/12/23/%E6%B5%8B%E8%AF%95%E9%A1%B5/</url>
     <content><![CDATA[<hr>
 <p>摘要</p>
@@ -82,5 +82,20 @@
       <tags>
         <tag>代数</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>关于Github改名遇到问题的一些解决方法</title>
+    <url>/2022/05/26/%E5%85%B3%E4%BA%8EGithub%E6%94%B9%E5%90%8D%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>注意！不到万不得已千万不要轻易修改Github的名字！（指的是本名，不是昵称）<br>改名之后虽然你的仓库会自动转移到你的名下，但是你所有的外部链接（比如根据URL链接你的库，或者token）基本全部都会失效<br>个人经历：改了GitHub的名字之后，picgo图包失效了，hexo博客404了（真的很沉重的打击），如果你有类似的问题那么继续往下看：<br>picgo图包的问题很好解决，因为库的改动，原本配置的token失效了（也有可能是过期，默认有效30天），只需要再创一个新的重新配置就好<br><img src="https://raw.githubusercontent.com/This-is-Xm/pic/master/img/token.PNG"><br>（注意，不要用相同的图片上传，否则失败）<br>hexo博客的话改动比较多，<br>1.首先是_config.yml和主题的_config，yml文件里URL链接要全部连接到你改名后的Github库上（建议用查找功能搜索你GitHub改前的名字然后挨个重写，直接替换可能会有不可逆后果）<br>2.hexo c &amp; hexo d &amp; hexo s看一下自己的本地博客还在不在，如果有报错看看有没有哪里格式错误（比如’:’前少个空格），如果你的本地博客成功访问了，恭喜你基本成功了<br>如果没有成功（比如我），也可能是外部链接的原因，比如我由于库位置的更换，在博客中使用的picgo图片全部失效了，需要挨个改链接，否则后上传的图片识别不了（为了安全建议把原图片的也改成现在改后的库）<br><img src="https://raw.githubusercontent.com/This-is-Xm/pic/master/img/%E4%BF%AE%E6%94%B9.PNG">（附图一张）<br>3.hexo c &amp; hexo d &amp; hexo d 高高兴兴上传，然后你会惊恐的发现自己搜不到自己网站了，有的是以前404的那个博客，不要慌——向百度提交网站申请（<a href="http://ziyuan.baidu.com/linksubmit/url%EF%BC%89%EF%BC%8C%E7%84%B6%E5%90%8E%E7%AD%89%E5%BE%85%E6%94%B6%E5%BD%95%E5%B0%B1%E5%A5%BD%E4%BA%86">http://ziyuan.baidu.com/linksubmit/url），然后等待收录就好了</a><br>在此期间可以通过增加访客，上传高质量贴来加快自己被收录的时间，被收录之前只能用链接来访问咯，学习经历++，心态锻炼++，下次可得注意了不要轻易改名哦</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>论坛不能直接上传图片解决方法（PicGo图床）</title>
+    <url>/2022/05/26/%E8%AE%BA%E5%9D%9B%E4%B8%8D%E8%83%BD%E7%9B%B4%E6%8E%A5%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%88PicGo%E5%9B%BE%E5%BA%8A%EF%BC%89/</url>
+    <content><![CDATA[<p>首先说明该帖只讲PicGo使用流程，以及遇到相关问题，省去在茫茫大海般网络中寻找答案的痛苦首先奉上安装方法<br>(14条消息) PicGo的安装与简单应用（Typora）_快乐的仔的博客-CSDN博客_picgo安装</p>
+<p>接着列举一下遇到的问题<br>一、上传失败，服务器出错<br>1.仔细看看你的图床设置没有问题（分支名是master不是main！）<br>2.上传的图片名字是否带有特殊符号，或者文件名过长，或者中文名识别错误，或者图片格式冷门<br>3.重启server试试看，重启应用试试看<br>4.玄学<br>二、github和图库无法正常显示预览图<br>1.图片是否被修改过/图片已被删除<br>2.<em><strong><strong><strong><strong><strong><strong><strong><strong><strong>！！！！！！！</strong></strong></strong></strong></strong></strong></strong></strong></strong></em>*<br>（1）C:\Windows\System32\drivers\etc复制到资源管理器，找到host文件，用notepad++（笔记本似乎也可以）打开，放在一边<br>（2）复制[color=var(–color-primary)]<a href="https://www.ipaddress.com/%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%93%E5%BC%80%EF%BC%8C%E5%9C%A8%E6%A1%86%E4%B8%AD%E8%BE%93%E5%85%A5raw.githubusercontent.com%E5%9B%9E%E8%BD%A6%E8%B7%B3%E8%BD%AC%EF%BC%8C%E6%89%BE%E5%88%B0DNS">https://www.ipaddress.com/用浏览器打开，在框中输入raw.githubusercontent.com回车跳转，找到DNS</a> Resource Record<br>把下面的四个以Data Name格式写出来（可以复制文末A内容,注意对比,确保内容没有再次更新）,写在::1 localhost之下<br>（3）CTRL+R输入cmd回车，接着输入ipconfig /flushdns回车，显示”已成功刷新DNS解析缓存”。<br>（4）回去看看图片是否成功显示了，否则仔细检查你的输入是否有误。<br>A内容:</p>
+<h1 id="GitHub-Start"><a href="#GitHub-Start" class="headerlink" title="GitHub Start"></a>GitHub Start</h1><p>140.82.112.3 github.com</p>
+<p>185.199.108.133 raw.githubusercontent.com<br>185.199.109.133 raw.githubusercontent.com<br>185.199.110.133 raw.githubusercontent.com<br>185.199.111.133 raw.githubusercontent.com<br>#此处为picgo修改</p>
+]]></content>
   </entry>
 </search>
