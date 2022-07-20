@@ -98,4 +98,13 @@
 <p>185.199.108.133 raw.githubusercontent.com<br>185.199.109.133 raw.githubusercontent.com<br>185.199.110.133 raw.githubusercontent.com<br>185.199.111.133 raw.githubusercontent.com<br>#此处为picgo修改</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>去除嵌套数组中的&quot;[]&quot;</title>
+    <url>/2022/07/20/%E5%8E%BB%E9%99%A4%E5%B5%8C%E5%A5%97%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84/</url>
+    <content><![CDATA[<p>——————————<br>事情发生于群员在面试时被问到的一个项目：“怎么把[1, 2, [3, [4, [5, 6], 7], 8], 9]用一个函数转成[1,2,3,4,5,6,7,8,9]，只能一个函数出结果，不能用全局变量”<br>于是就有了漫长的敲代码之路，记录，以后可能会用。<br>‘’’py<br>a=[1, 2, [3, [4, [5, 6], 7], 8], 9]<br>func = lambda x: [y for l in x for y in func(l)] if type(x) is list else [x]<br>print (func(a))<br>print(type(func(a)))<br>‘’’’<br><img src="https://raw.githubusercontent.com/This-is-Xm/pic/master/img/202207201609715.jpg"></p>
+]]></content>
+      <tags>
+        <tag>标签</tag>
+      </tags>
+  </entry>
 </search>
